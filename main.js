@@ -10,6 +10,12 @@ searchBtn.addEventListener("click", () => {
   }
 });
 
+searchInputTxt.addEventListener("keyup", (e) => {
+  if (e.keyCode === 13) {
+    searchBtn.click();
+  }
+});
+
 mealList.addEventListener("click", getMealRecipe);
 
 recipeCloseBtn.addEventListener("click", () => {
